@@ -1,6 +1,6 @@
 // Problem 1
 // Author: Gannon
-
+db.customers.find({name:"John Vega"})
 
 // Problem 2
 // Author: Leqi
@@ -12,7 +12,7 @@ db.customers.countDocuments({ address: /CT/ })
 
 // Problem 4
 // Author: Gannon
-
+db.customers.countDocuments({"address": /38560$/})
 
 // Problem 5
 // Author: Leqi
@@ -24,7 +24,7 @@ db.customers.countDocuments({name: /^D.*s$/})
 
 // Problem 7
 // Author: Gannon
-
+db.customers.countDocuments({accounts: {$size: 4}})
 
 // Problem 8
 // Author: Leqi
