@@ -8,7 +8,7 @@
 
 // Problem 3
 // Author: Brendan
-
+db.customers.countDocuments({ address: /CT/ })
 
 // Problem 4
 // Author: Gannon
@@ -20,7 +20,7 @@
 
 // Problem 6
 // Author: Brendan
-
+db.customers.countDocuments({name: /^D.*s$/})
 
 // Problem 7
 // Author: Gannon
@@ -32,3 +32,4 @@
 
 // Problem 9
 // Author: Brendan
+db.customers.countDocuments({name: /^L/, accounts: {$gt: 5}})
